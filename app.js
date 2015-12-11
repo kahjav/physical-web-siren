@@ -2,10 +2,13 @@ var express = require('express');
 var https = require('https');
 var request = require('request');
 require('dotenv').load({silent: true});
+var favicon = require('serve-favicon')
+
 
 
 var app = express();
 app.set('view engine', 'jade');
+app.use(favicon(__dirname + '/views/images/favicon.ico'))
 
 app.get('/', function (req, res) {
   https.get('https://maker.ifttt.com/trigger/on_light/with/key/' + process.env.IF_KEY, function (response) {
