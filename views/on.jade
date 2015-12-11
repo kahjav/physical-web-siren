@@ -1,0 +1,15 @@
+extends index
+
+block content
+    .round-button
+        .round-button-circle
+            a.round-button(href="/off")= "OFF"
+
+    script.
+      setInterval(function () {
+        if (document.body.style.background == "red") {
+          document.body.style.background = "white"
+        } else {
+          document.body.style.background = "red"
+        }
+      }, 500)

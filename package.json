@@ -1,0 +1,26 @@
+{
+  "name": "physical-web-siren",
+  "version": "1.0.0",
+  "description": "Physical Web Siren for the office.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kahjav/physical-web-siren.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kahjav/physical-web-siren/issues"
+  },
+  "homepage": "https://github.com/kahjav/physical-web-siren#readme",
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "material-design-lite": "^1.0.6",
+    "request": "^2.67.0"
+  }
+}
